@@ -211,5 +211,80 @@ section.title::after{
 .about.about-content.left{
     width: 45%;
 }
+.about.about-content.left img{
+    height:500px;
+    width:500px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+.about.about-content.right{
+    width: 50%;
+}
+.about.about-content.right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.about.about-content.right.text span{
+    color: crimson;
+}
+.about.about-content.right p{
+    text-align: justify;
+}
+.about.about-content.right a:hover{
+    color: crimson;
+    background: none;
+}
+.about.about-content.right.tab{
+    margin-left: 15px;
+}
+
+/* services tyling section */
+.services, .projects{
+    color: #fff;
+    background: #111;
+}
+.services.title::before,
+.projects.title::before{
+    background: #fff;
+}
+.services.title::after,
+.projects.title::after{
+    background: #111;
+    content: "I am learning";
+}
+.services.serv-content.card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services.serv-content.card:hover{
+    background: crimson;
+}
+.services.serv-content.card.box{
+    transition: all 0.3s ease;
+}
+.services.serv-content.card:hover.box{
+    transform: scale(1.05);
+}
+.services.serv-content.card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services.serv-content.card.card:hover i{
+    color: #fff;
+}
+.services.serv-content.card.text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* skills section styling */
 
 
