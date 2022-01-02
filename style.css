@@ -169,7 +169,7 @@ section .title::after{
     background: linear-gradient(
                 rgba(0, 0, 0, 0.8), 
                 rgba(0, 0, 0, 0.8)
-                ),url("images/banner.jpg") no-repeat center;
+                ),url("./images/banner.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -215,7 +215,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "who am i";
+    content: "who am I";
 }
 .about .about-content .left{
     width: 45%;
