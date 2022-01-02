@@ -33,4 +33,31 @@ $(document).ready(function(){
         $('.menu-btn-img').toggleClass("active");
     });
     //Typing text animation script
-})                                                              
+    var typed = new Typed(".typing", {
+        strings: ["Software Engineer", "Developer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+    // owl carousel script
+    $('.carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0:{
+                items: 1,
+                nav: false
+            },
+            600:{
+                items: 2,
+                nav:false
+            },
+            1000:{
+                items: 3,
+                nav: false
+            }
+        }
+    });
+});                                                              
