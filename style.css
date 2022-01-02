@@ -385,7 +385,7 @@ section .title::after{
     width: 35px;
     border-radius: 14px;
 }
-.owl-dot.active,
+.owl-dot.active,    
 .owl-dot:hover{
     background: crimson!important;
 }
