@@ -33,12 +33,16 @@ $(document).ready(function(){
         $('.menu-btn-img').toggleClass("active");
     });
     //Typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Software Engineer", "Developer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    var i=0;
+    var txt = 'Software Engineer';
+    var speed = 100;
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("typing-2").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+        }
+    }
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
