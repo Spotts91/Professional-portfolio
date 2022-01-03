@@ -99,10 +99,12 @@ section .title::after{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    -webkit-text-stroke: 1px black;
 }
 .navbar .logo a span{
     color: crimson;
     transition: all 0.3s ease;
+    -webkit-text-stroke: 1px black;
 }
 .navbar.sticky .logo a span{
     color: #fff;
@@ -132,6 +134,7 @@ section .title::after{
     font-size: 23px;
     cursor: pointer;
     display: none;
+    -webkit-text-stroke: 1px black;
 }
 .scroll-up-btn{
     position: fixed;
@@ -276,16 +279,17 @@ section .title::after{
 .services .title::after,
 .projects .title::after{
     background: #111;
-    content: "i am learning";
+    content: "I am learning";
 }
 .services .serv-content .card{
-    width: calc(33% - 20px);
+    display: flex;
+    flex-direction: column;
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;  
 }
 .services .serv-content .card:hover{
     background: crimson;
@@ -313,7 +317,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "in progress";
+    content: "In progress";
 }
 .skills .skills-content .column{
     width: calc(25% - 80px);
@@ -563,6 +567,7 @@ footer{
     height: 70px;
     width: 70px;
     border-radius: 50%;
+    position:relative;
 }
 .mailing{
     width: 100%;
