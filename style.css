@@ -172,7 +172,7 @@ section .title::after{
     background: linear-gradient(
                 rgba(0, 0, 0, 0.8), 
                 rgba(0, 0, 0, 0.8)
-                ),url("./images/banner.jpg") no-repeat center;
+                ),url("./Images/banner.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
