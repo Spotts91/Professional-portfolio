@@ -166,6 +166,15 @@ section .title::after{
     filter: brightness(90%);
 }
 
+#typingEffect {
+    border-right: .15em solid #fff;
+    animation: blink .5s step-end 
+    infinite alternate;;
+}
+
+@keyframes blink {
+    50% {border-color: transparent;}
+}
   
 /* home section styling */
 .home{
@@ -288,7 +297,7 @@ section .title::after{
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 20px 25px;
+    padding: 25px 30px;
     cursor: pointer;
     transition: all 0.3s ease;  
 }
@@ -313,6 +322,10 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+
+.serv-content .card .box .card .box {
+    height: 550px;
 }
 
 /* skills section styling */
@@ -397,7 +410,7 @@ section .title::after{
 
 .box {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
   }
 

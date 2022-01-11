@@ -1,3 +1,23 @@
+var typingSpan = document.querySelector('#typingEffect');
+
+console.clear()
+function typingEffect(element, speed) {
+    let text = element.innerHTML;
+    console.log(text)
+    element.innerHTML= '';
+    var i =0;
+    var timer = setInterval(function() {
+        if(i<text.length) {
+            element.append(text.charAt(i))
+            i++
+        } else {
+            clearInterval(timer);
+        }
+    }, speed)
+}
+
+typingEffect(typingSpan, 200);
+
 $(document).ready(function(){
     $(window).scroll(function(){
     // sticky navbar on sroll script
@@ -43,6 +63,10 @@ $(document).ready(function(){
             setTimeout(typeWriter, 100);
         }
     }
+
+  
+    console.log(typingEffect(typingSpan, 100))
+
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
